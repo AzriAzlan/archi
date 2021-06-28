@@ -86,8 +86,6 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           labelStyle: TextStyle(
                             color: Colors.black,
                           ),
-                          helperText: widget.usernameEmpty ? "Required" : "",
-                          helperStyle: TextStyle(color: Colors.red),
                         ),
                       ),
                     ),
@@ -104,8 +102,6 @@ class _PaymentScreenState extends State<PaymentScreen> {
                           labelStyle: TextStyle(
                             color: Colors.black,
                           ),
-                          helperText: widget.passwordEmpty ? "Required" : "",
-                          helperStyle: TextStyle(color: Colors.red),
                         ),
                       ),
                     ),

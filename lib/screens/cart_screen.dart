@@ -1,5 +1,5 @@
 import 'package:ezrestaurantapp/models/menuCart.dart';
-import 'package:ezrestaurantapp/screens/favourite_screen.dart';
+import 'package:ezrestaurantapp/screens/account_screen.dart';
 import 'package:ezrestaurantapp/screens/home_screen.dart';
 import 'package:ezrestaurantapp/services/database.dart';
 import 'package:flutter/material.dart';
@@ -49,8 +49,8 @@ class _CartScreenState extends State<CartScreen> {
                 label: 'Cart',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.favorite),
-                label: 'Favourites',
+                icon: Icon(Icons.person),
+                label: 'Account',
               ),
             ],
             currentIndex: _selectedIndex,
@@ -66,7 +66,7 @@ class _CartScreenState extends State<CartScreen> {
                 case 2:
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => FavouriteScreen()),
+                    MaterialPageRoute(builder: (context) => AccountScreen()),
                   );
                   break;
               }
